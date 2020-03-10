@@ -1,0 +1,1430 @@
+body {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(1, 21, 29);
+   }
+   *,
+   *:before,
+   *:after {
+       box-sizing: border-box;
+   }
+
+
+   /* HEADER */
+   
+   .leftContainer {
+    position: static;
+    height: 100%;
+    max-height: 655px;
+    z-index: 1000;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 90px;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1460px;
+    background: 
+    url("C:\\Users\\Nastya\\Desktop\\JavaScript\\Travel\\pictures\\MainBlueWater.jpg") no-repeat center;
+   }
+
+   .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+   }
+  
+   .header__logo {
+    font-size: 14px;
+    color: #065E8A;
+    margin-left: 10%;
+    font-weight: 400;
+   }
+  
+   .menu {
+    font-size: 14px;
+    margin-right: 10%;
+    justify-content: space-between;
+   }
+   #bars {
+    display: none;
+   }
+  
+   .pages_link {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    
+    
+    color: #065E8A;
+    text-decoration: none;
+   
+
+    transition: color 0.2s linear;
+   }
+   .pages_link:after {
+    display: block;
+    content: "";
+    border: none;
+    height: 2px;
+    width: 0%;
+    background-color: #065E8A;
+    transition: width .3s easy-in-out;
+   }
+   .pages_link:hover:after {
+    width: 100%;
+   }
+   .header {
+    display: block;
+    font-size: 90px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: auto;
+   }
+
+   .scroll1 {
+    display: block;
+    font-size: 30px;
+    color: #022349;
+    margin-left: 10%;
+    margin-top: -100px;
+    padding: auto;
+    margin-bottom: 15%;
+   }
+
+   .section1 {
+    text-decoration: none;
+   }
+  
+   .scroll2 {
+    display: block;
+    font-size: 30px;
+    color: #022349;
+    margin-left: 10%;
+    padding: auto;
+   }
+   .section2 {
+       margin-top: -30px;
+       color: #ffffff;
+   }
+
+   /* Choice Menu PHONE*/
+   .choiceMenuPhone {
+       width: 100%;
+       display: none;
+       margin-bottom: 30px;
+   }
+   .labelsPhone {
+       display: flex;
+       font-size: 15px;
+       width: 100%;
+       max-width: 340px;
+       background-color: rgb(5, 60, 92, 0.2);
+       margin-bottom: -1px;
+   }
+   Label.tabPhone.active {
+       background-color: #19AFFA;
+   }
+   .tabPhone {
+       padding-left: 3%;
+       display: inline-block;
+       cursor: pointer;
+       padding-right: 20px;
+   }
+   
+   .formPhone {
+    width: 100%;
+    max-width: 340px;
+    
+    display: none;
+   }
+   .formPhone.active {
+       display: inline-block;
+   }
+   .colorPhone {
+       background-color: #19AFFA;
+       padding-top: 8px;
+       padding-right: 28px;
+       padding-bottom: 8px;
+       margin-bottom: 5%;
+
+   }
+   
+   .windowPhone {
+       width: 100%;
+       max-width: 340px;
+       height: 35px;
+       margin-right: 50%;
+       margin-left: 5%;
+   }
+   .searchBtnPhone {
+    color:#125baf;
+    text-decoration: none;
+    border: #125baf solid 2px;
+    border-radius: 10px;
+    padding: 7px 10px;
+    width: 20%;
+    vertical-align: center;
+   
+
+    transition: color 0.2s linear;
+    margin-left: 5%;
+   }
+   
+   /* Choice menu */
+   .dwsForm {
+       margin-bottom: 60px;    
+   }
+
+
+   .labels {
+       margin-left: 10%;
+       background-color: rgb(5, 60, 92, 0.2);
+       display: inline-block;
+   }
+
+   label.tab {
+       margin-bottom: -1px;
+       color:#ffffff;
+       font-weight: 800;
+       padding: 10px;
+       display: inline-block;
+       border-radius: (3px 3px 0 0);
+       cursor: pointer;
+   }
+   label.tab.active {
+    background-color: #19AFFA;
+   }
+
+   .form {
+       width: 100%;
+       background-color: #19AFFA;
+       padding: 13px;
+       display: none;
+   }
+
+   .form.active {
+       display: block;
+   }
+   .background {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+   }
+
+   .dwsForm input {
+       display: block;
+       width: 100%;
+   }
+
+   .window {
+       margin-right: 1%;
+   }
+
+   .searchBtn {
+    color:#ffffff;
+    text-decoration: none;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    padding: 7px 10px;
+    width: 43%;
+    vertical-align: center;
+   
+
+    transition: color 0.2s linear;
+   }
+   .del {
+       display: none;
+   }
+
+   /* PlaceHolder */
+   ::-webkit-input-placeholder {color:#66a5ee;}
+   ::-moz-placeholder          {color:#66a5ee;}
+   :-moz-placeholder           {color:#66a5ee;}
+   :-ms-input-placeholder      {color:#66a5ee;}
+
+   /* Slider */
+   .carousel-container {
+       width: 59%;
+       max-width: 700px;
+       margin: auto;
+       margin-bottom: 90px;
+       border: 2px rgb(157, 209, 218) solid;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   #prevBtn {
+       position: absolute;
+       top: 50%;
+       z-index: 10;
+       left: 5%;
+       font-size: 30px;
+       color: white;
+       opacity: 0.7;
+       cursor: pointer;
+   }
+
+   #nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+   .Slider {
+       display: flex;
+       width: 300px;
+       height: 100%;
+   }
+   @media (max-width: 425px) {
+    .Slider img {
+        width: 100%;
+        max-width: 425px;
+    }
+   }
+   
+   @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+   
+
+   /* Screen 2*/
+   /*text*/
+   .container {
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+
+    width: 100%;
+    max-width: 1350px; 
+   }
+   .holder { 
+       width: 100%;
+       max-width: 1400px;
+   }
+   .text-container {
+       z-index: 700;  
+       width: 40%;
+       margin-left: 10%;
+       margin-right: 10%;
+   }
+   .mainText {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: #065E8A;
+   }
+   .text {
+       font-size: 15px;
+   }
+   .right {
+       width: 31.79%;
+   }
+
+   .rectangle {
+       padding-top: 60px;
+       position: absolute;
+       height: 100%;
+       max-height: 640px;
+       z-index: 10;
+   }
+
+   #blueBorder {
+    position: relative;
+    z-index: 20;
+    border: 6px solid #19AFFA;
+    border-radius: 30px;
+   }
+   .textImg {
+       position: relative;
+       height: 100%;
+       max-height: 590px;
+       float: right;
+       z-index: 5;
+
+       transition: filter 0.2s linear;
+   }
+
+   #blueBorder:hover {
+       filter: blur(4px);
+   }
+   .hover {
+       height: 100%;
+       max-height: 700px;
+   }
+   .hover:hover .block{
+       display: block;
+   }
+   
+   .block {
+       width: 80%;
+       max-width: 300px;
+       position: absolute;
+       text-align: right;
+       font-size: 40px;
+       padding-top: 12%;
+       
+       display: none;
+       color:rgb(0, 170, 255);
+       z-index: 30;
+   }
+  
+
+
+   /* Photo Gallery */
+   .firstContainer {
+    position: static;
+    height: 655px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 90px;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+   }
+
+   .secondImg {
+    position: static;
+    height: 100%;
+    max-height: 600px;
+    float: right;
+    z-index: 90;
+
+    margin-top: -11%;
+    margin-right: 20%;
+   } 
+   .thirdImg {
+       position: static;
+       height: 100%;
+       width: 100%;
+       max-width: 1000px;
+       margin-left: -30%;
+        }
+   #text {
+       width: 70%;
+       margin-top: 26%;
+       z-index: 1223;
+   }
+
+   /* Contacts */
+   #contactsText {
+       font-size: 24px;
+   }
+   .forthImg {
+    position: static;
+    height: 100%;
+    max-height: 500px;
+    float: right;
+    z-index: 90;
+
+    margin-top: -11%;
+   }
+   .map {
+       position: absolute;
+       display: flex;
+       border-radius: 50%;
+       width: 100%;
+       max-width: 450px;
+       height: 100%;
+       max-height: 450px;
+       border: 2px solid #19AFFA;
+
+       float: right;
+       margin-left: 43%;
+       margin-top: -53%;
+       z-index: 300;
+   }
+
+
+   /* PHOTOS in photo gallery*/
+   .containerPhoto {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10%;
+      margin-right: 10%;
+   }
+   .photoStock {
+       display: block;
+       width: 90%;
+       max-width: 330px;
+       height: auto;
+
+       z-index: 10;
+   }
+   .nameImg {
+    justify-content: center;
+    align-items: center;
+    margin-top: -7%;
+
+    display: flex;
+   }
+
+   .white {
+       color: #fff;
+   }
+   .black {
+       color: #000;
+   }
+  
+
+   /* MEDIA */
+   /* Main page*/
+   @media (max-width: 1440px){
+       .leftContainer {
+           height: 1000px;
+       }
+       .container {
+           margin-bottom: -5px;
+       }
+       .text-container {
+           width: 50%;
+       }
+       .dwsForm {
+        z-index: 2000;
+        width:100%;
+        height: 220px;
+        position: fixed;
+        bottom: -24%;
+ 
+        animation-name: show;
+        animation-duration: 2s;
+       }
+    @keyframes show {
+        0%{
+            opacity: 0;
+            bottom: -35%;
+        }
+        100%{
+            opacity: 1;
+            bottom: -24%;
+        }
+    }
+    .LeftRightText {
+        margin-top: -5%;
+    }
+   }
+   @media (max-width: 1400px) {
+    .LeftRightText {
+        margin-top: -30%;
+    }
+   }
+   @media (max-width: 1110px) {
+       .container {
+           margin-bottom: 60px;
+       }
+   }
+
+   @media (max-width: 1024px) {
+    .leftContainer {
+        width: 100%;
+        height: 650px;
+        }
+    .LeftRightText {
+            margin-top: -5%;
+        }
+    .header__inner {
+            padding-top: 10px;
+            font-size: 12px;
+        }
+    .header {
+            font-size: 70px;
+        }
+    .scroll1 {
+            font-size: 20px;
+            margin-top: -80px;
+        }
+       
+    .container {
+            width: 100%;
+            max-width: 1360px;
+            height: 100%;
+            max-height: 570px;
+        }
+    .text-container {
+            margin-left: 5%;
+            width: 50%;
+        }
+    .mainText {
+            font-size: 35px;
+           }
+    .text {
+            font-size: 14px;
+           }
+    .textImg {
+            height: 100%;
+            max-height: 530px;
+            margin-top: 7%;
+            float: right;
+            margin-right: 1px;
+        }
+    .rectangle {
+            width: 100%;
+            max-width: 270px;
+            height: 100%;
+            max-height: 490px;
+            margin-top: 7%;
+            margin-left: -10%;
+        }
+    #first {
+             position: absolute;
+             width: 100%;
+             max-width: 310px;
+             max-height: 473px; 
+             margin-top: 10%;
+            }
+    .right {
+                width: 30%;
+            }
+    .dwsForm {
+             z-index: 2000;
+             width: 100%;
+             height: 178px;
+             position: fixed;
+             top: 80%;
+      
+             animation-name: show;
+             animation-duration: 2s;
+         }
+         @keyframes show {
+             0%{
+                 opacity: 0;
+                 top: 100%;
+             }
+             100%{
+                 opacity: 1;
+                 top: 80%;
+             }
+         }
+         .container {
+             margin-bottom: 120px;
+         }
+    }
+    @media (max-width: 1023px) {
+        .leftContainer {
+            width: 100%;
+            max-width: 1023px;
+            height: 700px;
+        }
+        .header__inner{
+            padding-top: 12px;
+            font-size: 10px;
+        }
+        .header {
+            font-size: 60px;
+        }
+        .dwsForm {
+            z-index: 2000;
+            width: 100%;
+            height: 200px;
+            position: fixed;
+           bottom: -12px;
+     
+            animation-name: show;
+            animation-duration: 2s;
+        }
+        @keyframes show {
+            0%{
+                opacity: 0;
+               bottom: 10px;
+            }
+            100%{
+                opacity: 1;
+                bottom: -12px;
+            }
+        }
+        .container {
+            width: 100%;
+            max-width: 1023px;
+            height: 100%;
+            max-height: 570px;
+            margin-bottom: 200px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 83%;
+            height: 500px;
+            margin-bottom: 50px;  
+        }
+        .scroll1 {
+            font-size: 20px;
+            margin-top: -40px;
+            margin-bottom: 25%;
+        }
+        .mainText {
+            font-size: 28px;
+           }
+        .text {
+            font-size: 13px;
+           }
+        .block {
+            width: 60%;
+            max-width: 200px;
+            font-size: 30px;
+           }
+        .textImg {
+            height: 100%;
+            max-height: 540px;
+            margin-top: 5%;
+        }
+        .rectangle {
+            width: 100%;
+            max-width: 320px;
+            height: 100%;
+            max-height: 500px;
+            margin-top: 6%;
+        }
+        #first {
+             width: 100%;
+             max-width: 310px;
+             height: 100%;
+             max-height: 475px;
+            }
+        #second {
+            width: 100%;
+            max-width: 400px;
+        }
+        .right {
+                width: 30%;
+            }
+    }
+    @media (max-width: 854px) {
+        .rectangle {
+            max-width: 290px;
+            max-height: 470px;
+        }
+        #second {
+            height: 100%;
+            max-height: 300px;
+        }
+        .text-container{
+            width: 46%;
+            font-size: 15px;
+        }
+        .del {
+            display: none;
+        }
+        .container {
+            margin-bottom: 300px;
+        }
+    }
+    @media (max-width: 670px) {
+        .leftContainer {
+            width: 100%;
+            max-width: 670px;
+            height: 700px;
+        }
+        .text-container {
+            width: 80%;
+            margin-left: 10%;
+            font-size: 15px;
+        }
+        .header__inner {
+            margin-left: 5%;
+        }
+        .header {
+            font-size: 50px;
+            margin-bottom: 70px;
+            margin-left: 10%;
+        }
+        .scroll1 {
+            margin-left: 10%;
+        }
+        #show {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin-left: 20%;
+        }
+        .right {
+            display: none;
+        }
+        .container {
+            margin-bottom: 170px;
+        }
+
+    }
+    @media (max-width: 552px){
+        #lastContainer {
+            margin-bottom: 300px;
+        }
+        #tabletMain {
+            font-size: 14px;
+        }
+        #MenuTablet {
+            font-size: 14px;
+        }
+        .mainText{
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 425px) {
+        .leftContainer {
+            width: 100%;
+            max-width: 425px;
+            height: 100%;
+            max-height: 570px;
+            margin-bottom: 40px;
+            background: 
+            url("C:\\Users\\Nastya\\Desktop\\JavaScript\\Travel\\pictures\\MainBlueWaterPhone.jpg") no-repeat;
+        }
+        .header__inner{
+                padding-top: 12px;
+                font-size: 10px;
+                margin-left: 0;
+            }
+        .pages_link{
+                display: none;
+            }
+        #bars{
+                position: absolute;
+                display: flex;
+                color: #065E8A;
+                margin-right: 10%;
+                margin-top: -10px;
+                size: 30px;
+            }
+        .dwsForm {
+                display: none;
+            }
+        .choiceMenuPhone {
+                display: inline-block;
+            }
+        .header {
+                font-size: 40px;
+                margin-left: 5%;
+                margin-bottom: -6%;
+                margin-top: -5%;
+                color: #125baf;
+             }
+        .scroll1 {
+                display: none;
+            }
+        .tabPhone {
+                color: #ffffff;
+            }
+        .right {
+                display: none;
+            }
+        #show {
+            max-width: 280px;
+            margin-left: 24%;
+        }
+        .mainText {
+                display: block;
+                color: #065E8A;
+             }
+            .text {
+                margin-top: 8%;
+            }
+        .text-container {
+                margin-left: 5%;
+                margin-bottom: 4%;
+                width: 100%;
+                max-width: 425px;
+        }
+        .carousel-container {
+                position: relative;
+                width: 71%;
+                height: 200px;
+                margin-bottom: 50px;
+                
+        }
+        .del {
+            display: block;
+            width: 100%;
+            max-width: 425px;
+            margin-left: 50%;
+        }
+        #ChoiceMenu {
+            right: 5%;
+            font-size: 40px;
+        }
+        .container {
+            margin-bottom: 200px;
+        }
+    }
+    @media(max-width: 768px) {
+        .container {
+            width: 100%;
+            max-width: 768px;
+            height: 100%;
+            max-height: 570px;
+        }
+    }
+    @media (max-width: 375px) {
+        .header {
+            font-size: 34px;
+            margin-left: 3%;
+            margin-bottom: -4%;
+            margin-top: -5%;
+            color: #125baf;
+        }
+    }
+/* Photo Gallery, References, Contacts*/
+@media (max-width: 1440px) {
+    .firstContainer {
+        width: 100%;
+        max-width: 1440px;
+    }
+    .header__inner {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .menu {
+        z-index: 54;
+    }
+    .header__logo {
+        font-size: 22px;
+    }
+    .pages_link {
+        font-size: 22px;
+    }
+    #barsRef {
+        display: none;
+    }
+    .thirdImg {
+        position: absolute;
+        height: 100%;  
+        width: 100%;
+        max-width: 1100px;
+        z-index: 1;
+        margin-top: -6%;
+        margin-left: -64%;
+        }
+    .deleted {
+        display: none;
+    }
+    .plane {
+        display: none;
+    }
+    .photoStock {
+        max-width: 400px;
+    }
+    .phonePicture {
+        display: none;
+    }
+    #mainTextPhone {
+        display: none;
+    }
+    #mainTextPhoneG {
+        display: none;
+    }
+    .phone {
+        display: none;
+    }
+    .FixedLink {
+        display: none;
+    }
+    .FixedLinkRef {
+        display: none;
+    }
+    .planeRef {
+        display: none;
+    }
+    .ReferencesContainerPhone{
+        display: none;
+    }
+    .ReferencesContainer {
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .row1 {
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 15%;
+    }
+    .row2 {
+        justify-content: space-between;
+        display: flex;
+    }
+    .card {
+        border: 2px solid #065E8A;
+        width: 300px;
+    }
+    .card-body {
+        padding-left: 5%;
+    }
+    .card-img {
+        width: 296px;
+    }
+    .findContry {
+        position: absolute;
+        width: 700px;
+
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+    #input {
+        width: 500px;
+    }
+    .calumnMain {
+        display: none;
+    }
+}
+@media (max-width: 1400px){
+    .firstContainer {
+        height: 100%;
+        width: 100%;
+    }
+    .text-container {
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    #textGallery {
+        margin-top: -20%;
+    }
+    .text {
+        margin-left: 10%;
+    }
+    #text {
+        margin-top: -10%;
+    }
+    .pages_link{
+        font-size: 18px;
+        z-index: 19;
+    }
+    .mainText{
+        margin-left: 10%;
+        margin-bottom: 40%;
+        font-size: 50px;
+    }
+    .secondImg {
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        max-height: 1400px;
+    }
+    .thirdImg {
+        width: 100%;
+        max-width: 970px;
+    }
+    .right {
+        width: 40%;
+    }
+    .header__logo{
+        font-size: 18px;
+    }
+    .header__inner{
+        margin-right: -2%;
+        margin-left: -1%;
+        z-index: 1342;
+    }
+    .phonePicture{
+            display: none;
+        }
+    .deleted {
+            display: none;
+        }
+    #phoneNumber {
+        font-size: 30px;
+    }
+    #mainTextPhone {
+        display: none;
+    }
+    #mainTextPhoneG {
+        display: none;
+    }
+    .map {
+        margin-left: 43%;
+        margin-top: -50%;
+    }
+
+}
+@media (max-width: 1024px){
+    .forthImg {
+        margin-top: -15%;
+    }
+    .map {
+    margin-left: 40%;
+    margin-top: -35%;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 350px;
+    }
+    .header__inner {
+        margin-right: -3%;
+        margin-left: -3%;
+        font-size: 12px;
+    }
+    .thirdImg {
+        width: 100%;
+        max-width: 690px;
+        height: 100%;
+        max-height: 590px;
+        float: right;
+    }
+    .mainText {
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+    #text {
+        margin-left: 5%;
+    }
+    .text {
+        margin-left: 5%;
+    }
+    #textGallery {
+        margin-top: 30px;
+    }
+    .ReferencesContainer {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .row1 {
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: -28%;
+    }
+    .card {
+        border: 2px solid #065E8A;
+        width: 280px;
+        margin-top: 30%;
+    }
+    .card-img {
+        width: 276px;
+    }
+    .findContry {
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 35%;
+        margin-right: 5%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 768px){
+    .ReferencesContainer{
+        margin-top: -35%;
+        margin-left: 8%;
+        margin-right: 0;
+    }
+    .row1 {
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: -28%;
+    }
+    .card {
+        border: 2px solid #065E8A;
+        width: 225px;
+        margin-top: 30%;
+    }
+    .card-img {
+        width: 221px;
+    }
+    .coverFindContry {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .findContry {
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 20%;
+        margin-right: 5%;
+        margin-bottom: 50px;
+    }
+    .ContainerRef {
+        margin-right: -10%;
+    }
+    .hover {
+        float: right;
+    }
+    .thirdImg {
+        width: 100%;
+        max-width: 620px;
+        height: auto;
+        float: right;
+    }
+    .map {
+        margin-top: -50%;
+    }
+}
+
+@media (max-width: 760px) {
+    .RightContainer {
+        width: 100%;
+        height: 610px;
+        max-width: 760px;
+        margin-bottom: 110px;
+        background: url("C:\\Users\\Nastya\\Desktop\\JavaScript\\Travel\\pictures\\MainPhone.jpg") no-repeat right;
+    }
+    #contactsText {
+        width: 70%;
+    }
+    #phoneNumber {
+        font-size: 21px;
+    }
+    
+    .thirdImg {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        float: right;
+    }
+    .containerPhoto {
+        display: none;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 7%;
+        margin-right: 4%;
+    }
+    .photoStock {
+        max-width: 300px;
+    }
+    
+}
+@media (max-width: 670px){
+    .color {
+        background: #ffffff;
+        width: 400px;
+    }
+    .thirdImg {
+        width: 100%;
+        max-width: 580px;
+        height: auto;
+        float: right;
+    }
+    .findContry {
+        position: absolute;
+        margin-top: -10%;
+        margin-left: 20%;
+        margin-right: 5%;
+        margin-bottom: 50px;
+    }
+    .menu {
+        margin-right: -17%;
+    }
+    .ReferencesContainer {
+        margin-top: -30%;
+        margin-left: 10%;
+        margin-right: -10px;
+    }
+}
+@media (max-width: 570px){
+    .MenuGal {
+        font-size: 16px;
+    }
+    #headerGal {
+        font-size: 16px;
+    }
+}
+ @media (max-width: 425px){
+    #holderGallery {
+        display: none;
+    }
+    #holderReferences {
+        display: none;
+    }
+    .deleted {
+        display: none;
+    }
+    .pages_link{
+        display: none;
+    }
+    .holder {
+        display: none;
+    }
+    .header__inner{
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    .text-container {
+        position: relative;
+        width: 90%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .container {
+        margin-bottom: 100px;
+    }
+    .phonePicture {
+        display: block;
+        width: 100%;
+        max-width: 425px;
+        height: auto;
+        z-index: 5;
+        margin-top: -14%;
+       margin-bottom: 90px;
+    }
+    .header__logo {
+        margin-left: 2%;
+        z-index: 1000;
+    }
+    #mainTextPhone {
+        position: absolute;
+        display: block;
+        z-index: 260;
+        color:#ffffff;
+    }
+    #mainTextPhoneG {
+        
+        position: absolute;
+        display: block;
+        z-index: 260;
+        color: #065E8A;
+    }
+    .phone {
+        display: block;
+        margin-left: 12%;
+        margin-right: 2%;
+        margin-top: 90%;
+    }
+    .photoStock {
+        max-width: 400px;
+    }
+    .plane {
+        position: fixed;
+        display: block;
+        bottom: 40px;
+        margin-left: 92%;
+        color: #065E8A;
+        font-size: 30px;
+
+        animation-name: plane;
+        animation-duration: 3s;
+    }
+    @keyframes plane {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .FixedLink {
+        position: fixed;
+        display: block;
+        bottom: 10px;
+        margin-left: 92%;
+        color: #065E8A;
+        font-size: 30px;
+
+        animation-name: showArrow;
+        animation-duration: 2s;
+    }
+
+    @keyframes showArrow {
+        0% {
+            opacity: 0;
+            bottom: -20px;
+        }
+        100% {
+            opacity: 1;
+            bottom: 10px;
+        }
+    }
+    #bars    {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        z-index: 999;
+        margin-left: -105px;
+    }
+    #barsRef {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        z-index: 999;
+        margin-right: 120px;
+    }
+    .map {
+        margin-left: 10%;
+        margin-top: -20%;
+        width: 100%;
+        max-width: 350px;
+        height: 100%;
+        max-height: 350px;
+        }
+        .ReferencesContainer {
+            display: none;
+        }
+        .ReferencesContainerPhone{
+            display: block;
+            justify-content: space-between;
+            width: 400px;
+
+            margin-left: 2%;
+        }
+        .card-text{
+            font-size: 14px;
+        }
+        .card-img {
+            width: 186px;
+        }
+        .calumnMain {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin-left: 25%;
+        }
+        .card {
+            margin-bottom: 3%;
+            width: 190px;
+        }
+        .findContry {
+            width: 200px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        #input {
+            width: 400px;
+        }
+        .planeRef {
+            position: fixed;
+            display: block;
+            bottom: 40px;
+            margin-left: 75%;
+            color: #065E8A;
+            font-size: 30px;
+    
+            animation-name: plane;
+            animation-duration: 3s;
+        }
+        @keyframes plane {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .FixedLinkRef {
+            position: fixed;
+            display: block;
+            bottom: -10px;
+            margin-left: 75%;
+            color: #065E8A;
+            font-size: 30px;
+    
+            animation-name: showArrow;
+            animation-duration: 2s;
+        }
+    
+        @keyframes showArrow {
+            0% {
+                opacity: 0;
+                bottom: -20px;
+            }
+            100% {
+                opacity: 1;
+                bottom: 10px;
+            }
+        }
+}
